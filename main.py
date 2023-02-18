@@ -43,6 +43,34 @@ def brincar_de_plim(fim):
 
 #def contagem_regressiva(inicio, fim):
 
+def exibir_dia_da_semana_if(numero):
+    print("Execução com IF")
+    if numero == 1:
+        print('O dia é segunda')
+    elif numero == 2:
+        print('O dia é terça')
+    elif numero == 3:
+        print('O dia é quarta')
+    elif numero == 4:
+        print('O dia é quinta')
+    elif numero == 5:
+        print('O dia é sexta')
+    elif numero == 6:
+        print('O dia é sábado')
+    elif numero == 7:
+        print('O dia é domingo')
+    else:
+        print('Número de dia inválido. Digite um número de 1 a 7')
+
+def brincar_de_para_ou_continua():
+    resposta = 'C' # S aqui significa que continua
+
+    #while resposta == 'C' or resposta == 'c':
+    while resposta.upper() == 'C':
+        resposta = input("Digite C para continuar ou qualquer outro caracter para parar")
+
+    print('Você decidiu parar com a brincadeira')
+
 #estrutura de identificação / execução do script
 if __name__ == '__main__':
     print_hi('Jorge')
@@ -68,3 +96,9 @@ if __name__ == '__main__':
 
     # brincar de plim
     brincar_de_plim(100)
+
+    #Exemplo de dia da semana com if - elif - else
+    #exibir_dia_da_semana_if()
+
+    # exemplo com while - para ou continua
+    brincar_de_para_ou_continua()
